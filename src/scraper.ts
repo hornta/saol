@@ -49,7 +49,7 @@ export const scrape = async ({ fromId, onWords, onFinish }: ScrapeOptions) => {
         id === undefined ||
         className === undefined
       ) {
-        throw new Error("");
+        throw new Error("Some data is missing in link " + link);
       }
 
       const word: Word = {
